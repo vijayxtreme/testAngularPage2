@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="App">
+<head>
+	<meta charset="utf-8" />
+	<title>Angular App Demo 3</title>
+</head>
+<body ng-controller="MainCtrl">
+
+	<ul>
+		<li ng-repeat='category in categories'>
+			<a href='#'>{{category.name}}</a>
+		</li>
+	</ul>
+	<hr />
+	<div ng-repeat="bookmark in bookmarks">
+		<a href="{{bookmark.url}}">{{bookmark.title}}</a><br />
+	</div>
+	<script src="angular.min.js"></script>
+	<script src="app.js"></script>
+	
+</body>
+</html>
